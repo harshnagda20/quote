@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    border: 5px solid black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    /* ADD BG-IMAGE */
+    background-image: url(FirstProjectBackgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#section_one{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#section_one h1{
+    color: whitesmoke;
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-shadow: 10px 10px 10px black ;
+    text-align: center;
+}
+#section_two{
+    /* border: 5px double black; */
+    border-radius: 35px;
+    height: 45%;
+    width: 50%;
+    padding: 20px;
+}
+#quote_text{
+    /* border: 5px solid red; */
+    height: 80%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    text-shadow: 10px 10px 15px black ;
+    text-align: center;
+}
+#quate_author{
+    /* border: 5px solid red; */
+    height: 20%;
+    color: white;
+    text-align: right;
+    padding-top: 25px;   
+    padding-right: 15px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 10px 10px 15px black ;
+}
+strong{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 20px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+#section_three button{
+    /* border: 2px solid black; */
+    height: 55px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+}
+#quote_btn:hover{
+    cursor:pointer;
+}
+#quote_btn:active{
+   background: black;
+   color: white;
+   outline: none;
+}
+/* IPHONE 14 PRO MAX */
+@media (max-width:932px) {
+    #section_two{
+        width: 80%;
+    }
+    #quate_author{
+        height: 18%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding-right: 7px;
+        }
+    #strong{
+       display: flex;
+       justify-content: end;
+       align-items: end;
+       text-align: end;
+       padding-right:0%;
+    }
+}
